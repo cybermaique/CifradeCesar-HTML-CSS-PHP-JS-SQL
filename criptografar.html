@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Cifra de Cesar - Dígitro</title>
+	<meta charset="utf-8">
+	
+	<link type="text/css" rel="stylesheet" href="style.css">
+	
+</head>
+
+<body class="bg3"> 
+
+<div align="center">
+<table id="tabelaPrincipal" align="center"><tr><td>
+<span id="label">         Chave: </span> <span id="chave">1</span><p> <p>
+	<button class="mn1" onclick="subtrairChave()">-</button>
+	<button class="mn1" onclick="somarChave()">+</button>
+	
+	<br/>
+	<form name="formuser" action="salvar_palavra.php" method="post" onSubmit="return validacao();" class="center">
+		<input type="text" name="input" id="input" placeholder="      Insira aqui a palavra"/><p>
+		<button class="mn2" type="submit">Cifrar & Salvar</button>
+	</form>
+	</tr>
+	</td>
+	</table>
+	
+	</div>
+	
+	<script type="text/javascript" src="scripts.js"></script>
+</body>
+
+</html>
